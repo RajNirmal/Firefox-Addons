@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Boerderify",
+    "version": "1.0",
+    "description": "Sample Fox extension",
+    "applications": {
+        "gecko": {
+            "id": "activity-stream@mozilla.org"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["border.js"]
+    }]
+}

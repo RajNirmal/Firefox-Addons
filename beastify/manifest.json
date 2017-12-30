@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Beastify",
+    "version": "1.0",
+    "description": "An extension that enters image into a webpage forcefully",
+    "homepage_url": "https://www.github.com/rajnirmal",
+
+    "icons": {
+        "48": "icons/beasts-48.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/beasts-32.png",
+        "default_title": "Beastify",
+        "default_popup": "popup/choose.html"
+    },
+
+    "web_accessible_resources": [
+        "beasts/1.jpg",
+        "beasts/2.jpg",
+        "beasts/3.jpg",
+        "beasts/4.jpg"
+    ],
+
+    "applications": {
+        "gecko": {
+            "id": "activity-stream@mozilla.org"
+        }
+    }
+}
