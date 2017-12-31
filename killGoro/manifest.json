@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "KillGoro",
+    "version": "1.0",
+    "description": "A mozilla extension that automatically likes youtube videos",
+    "homepage_url": "https://github.com/rajnirmal",
+
+    "applications": {
+        "gecko": {
+            "id": "activity-stream2@mozilla.org"
+        }
+    },
+
+    "icons": {
+        "48": "icons/GameAttack-48"
+    },
+
+    "permissions": [
+        "activeTab", "tabs", "webNavigation", "<all_urls>"
+    ],
+
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["scripts/like.js"],
+        "all_frames": true,
+        "run_at": "document_end"
+    }]
+
+}

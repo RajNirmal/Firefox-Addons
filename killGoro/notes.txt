@@ -1,0 +1,6 @@
+1. How to click items in a website
+2. Identify thte like button
+3. Initiate the click
+4. check the channel name
+
+Youtube API - AIzaSyBFf678Ag8OyBGTcbUkpxylk2tpADHIAn0
